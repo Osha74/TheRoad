@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainUserActivity"
+    tools:showIn="@layout/app_bar_main_user">
+
+    <ImageButton
+        android:id="@+id/imgwinch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtwinch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgrepairrr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sax" />
+
+    <ImageButton
+        android:id="@+id/imgrepairrr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgwinch"
+        app:layout_constraintEnd_toStartOf="@+id/imgwinch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgwinch"
+        app:srcCompat="@drawable/cac"
+        tools:srcCompat="@drawable/cac" />
+
+    <TextView
+        android:id="@+id/txtwinch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="213dp"
+        android:text="@string/winch"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgwinch"
+        app:layout_constraintStart_toStartOf="@+id/imgwinch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtrepairrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/repair_center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgrepairrr"
+        app:layout_constraintTop_toBottomOf="@+id/imgrepairrr" />
+
+</android.support.constraint.ConstraintLayout>

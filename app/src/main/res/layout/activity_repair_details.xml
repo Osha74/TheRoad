@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:id="@+id/btnnnn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RepairDetails">
+
+    <TextView
+        android:id="@+id/txtrepairDid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome_winch"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="283dp"
+        android:layout_height="256dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/carsflat" />
+
+
+
+    <TextView
+        android:id="@+id/txtRepairDid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/repair_center_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+    <TextView
+
+        android:id="@+id/txtrepairDname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textColor="@color/grey_200"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtRepairDid3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/repair_center_phone"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgcall"
+        android:layout_gravity="center_vertical"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        app:srcCompat="@drawable/caaall" />
+        <TextView
+            android:id="@+id/txtrepairDphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="Phone"
+            android:textColor="@color/grey_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRepairDid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repair_center_specialty"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txtrepairDSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Specialty"
+        android:textColor="@color/grey_200"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

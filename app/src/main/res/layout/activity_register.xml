@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/login"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapetxt"
+        android:drawableRight="@drawable/uesr"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapetxt"
+        android:drawableRight="@drawable/uesrrr"
+        android:hint="@string/userr_name"
+        android:inputType="textPersonName"
+        android:padding="8dp" />
+
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapetxt"
+        android:drawableRight="@drawable/passord"
+        android:hint="@string/ppassword"
+        android:inputType="textMultiLine|textPassword"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapetxt"
+        android:drawableRight="@drawable/mali"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtactivecode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/shapetxt"
+            android:hint="@string/code"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shapebtn"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtphone"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapetxt"
+        android:drawableRight="@drawable/phon"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapetxt"
+        android:drawableRight="@drawable/address"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btncreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shapebtn"
+        android:text="@string/create"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
